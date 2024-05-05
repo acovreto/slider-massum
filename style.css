@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.galerija-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200vh;
+  margin: 0;
+  gap: 10vh;
+
+  background-color: #555;
+}
+.galerija-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.galerija-img {
+  width: 60vw !important;
+  height: 400px;
+  object-fit: cover;
+  aspect-ratio: 6/3;
+}
+
+.galerija {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  height: 430px;
+  width: 60vw;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galerija-btn {
+  background-color: rebeccapurple;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  width: 49.5%;
+}
+
+.galerija-btn:hover {
+  opacity: 0.9;
+}
+
+.galerija-btn:focus {
+  outline: none;
+}
